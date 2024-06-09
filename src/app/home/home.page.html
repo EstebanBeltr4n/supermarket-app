@@ -1,25 +1,46 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Inbox
-    </ion-title>
+  <ion-toolbar color="success">
+    <ion-title>Bienvenido</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
+  <ion-fab vertical="botton" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['/add-post']">
+      <ion-icon name="add"></ion-icon>      
+    </ion-fab-button>    
+  </ion-fab>
+
+  <ion-list lines="none">
+    <ion-item-sliding>
+      <ion-item class="no-padding">
+        
+        <ion-label>
+          <h2>Producto</h2>
+          <p>Descripcion</p>
+        </ion-label>
+
+        <ion-label>
+          <h2>Sitio</h2>
+          <p>Descripcion</p>
+        </ion-label>
+
+        
+      </ion-item>
   
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">
-        Inbox
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-list>
-    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
+      <ion-item-options side="start">
+        <ion-icon slot="icon-only" name="pencil-outline" size="large"></ion-icon> 
+      </ion-item-options>
+      
+      <ion-item-options side="end">
+        <ion-icon slot="icon-only" name="trash" size="large"></ion-icon> 
+      </ion-item-options>
+      
+    </ion-item-sliding>
   </ion-list>
+  
+
+  
+
+
 </ion-content>
