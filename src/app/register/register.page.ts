@@ -19,14 +19,14 @@ export class RegisterPage implements OnInit {
     private navCtrl: NavController
   ) { }
 
-  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
+   // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit() {}
 
   async register(user : User){
     if (this.formValidation()) {
       let loader = await this.loadingCtrl.create({
         message: "Procesando..."
-      });
+      })
       await loader.present();
 
       try {
