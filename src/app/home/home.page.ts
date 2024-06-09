@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomePage implements OnInit {
 
   constructor() { }
-  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
+  //Aqui existe un error
   ngOnInit() {
+    console.log('HomePage initialized');
   }
 
 }
+
