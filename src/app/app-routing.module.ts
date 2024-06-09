@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: '',
     //prueba
-    redirectTo: 'register',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {

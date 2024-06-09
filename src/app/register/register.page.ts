@@ -20,7 +20,7 @@ export class RegisterPage implements OnInit {
   ) { }
 
   //Corrige aqui el error
-  ngOnInit() {console.log('HomePage initialized');}
+  ngOnInit() {console.log();}
 
   async register(user : User){
     if (this.formValidation()) {
