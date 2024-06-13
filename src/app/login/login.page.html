@@ -1,10 +1,18 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="success">
-    <ion-title>ShophyRe Genera tu lista de compra 🛒</ion-title>
-    <ion-title>Iniciar sesion</ion-title>
-
+  <ion-toolbar color="light-yellow">
+    <ion-title class="ion-text-center">🛒------ShophyRe Genera tu lista de compra----- 🛒----</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<div class="spacer"></div>
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title class="ion-text-center">Iniciar sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
 
 <ion-content>
   
@@ -20,8 +28,12 @@
     <ion-input type = "password" required [(ngModel)]="user.password"> </ion-input>
   </ion-item>
 
-  <ion-button class="ion-padding" color="primary" expand="full" (click)="login(user)" >Ingresar</ion-button>
-  <ion-button class="ion-padding" color="light" expand="full" [routerLink]="['/register']">Registrar</ion-button>
+  <div class="spacer"></div>
+
+  <ion-button class="ion-padding custom-width" color="primary" (click)="login(user)">Ingresar</ion-button>
+
+  <ion-button class="ion-padding custom-width" color="light" [routerLink]="['/register']">Registrar</ion-button>
+
 
 
 </ion-content>
