@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Agregart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position = "floating"> Producto </ion-label>
+    <ion-label type="text" required [(ngModel)]="post.producto"></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position = "floating"> Sitio </ion-label>
+    <ion-label type="text" required [(ngModel)]="post.sitio"></ion-label>
+  </ion-item>
+
+  <ion-button class="ion-padding" color="primary" expand="full" (click)="createPost(post)"></ion-button>
+  
+</ion-content>
