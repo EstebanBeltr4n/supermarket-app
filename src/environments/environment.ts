@@ -11,9 +11,10 @@
 export const environment = {
   production: false,
   firebaseConfig :{
-
+    
     apiKey: "AIzaSyDbDLgbW8852e00fREQF-QquLUMzTt7r-o",
     authDomain: "appshopyrev1.firebaseapp.com",
+    databaseURL: "https://appshopyrev1-default-rtdb.firebaseio.com",
     projectId: "appshopyrev1",
     storageBucket: "appshopyrev1.appspot.com",
     messagingSenderId: "476557446293",
