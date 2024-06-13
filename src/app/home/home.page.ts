@@ -7,7 +7,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
   posts:any;
 
@@ -23,6 +23,7 @@ export class HomePage {
     this.getPost();    
   }
   //Aqui existe un error
+  ngOnInit() {console.log();}
 
   async getPost(){
     let loader = await this.loadingCtrl.create({
