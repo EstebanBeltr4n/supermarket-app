@@ -1,27 +1,34 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="success">
-    <ion-title>ShophyRe 🛒</ion-title>
-    <ion-title>Registrar</ion-title>
-
+    <ion-title class="ion-text-center">ShophyRe 🛒</ion-title>
+    <ion-title class="ion-text-center">Registrar</ion-title>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content>
   
   
 
-  <ion-item>
-    <ion-label position="floating">Correo electronico</ion-label>
-    <ion-input type = "email" [(ngModel)]="user.email" required> </ion-input>
-  </ion-item>
+  <div class="custom-width-container">
+    <ion-item>
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+    </ion-item>
+  </div>
   
-  <ion-item>
-    <ion-label position="floating">Contraseña</ion-label>
-    <ion-input type = "password" [(ngModel)]="user.password" required> </ion-input>
-  </ion-item>
+  
+  <div class="custom-width-container">
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input class="custom-input" type="password" [(ngModel)]="user.password" required></ion-input>
+    </ion-item>
+  </div>
+  
 
   
-  <ion-button class="ion-padding" color="primary" expand="full" (click)="register(user)" >Registrarse</ion-button>
+  <ion-button class="ion-padding custom-button-width" color="primary" (click)="register(user)">Registrarse</ion-button>
+
 
 
 </ion-content>

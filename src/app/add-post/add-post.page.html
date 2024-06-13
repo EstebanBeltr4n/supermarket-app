@@ -5,15 +5,17 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-label position = "floating"> Producto </ion-label>
-    <ion-label type="text" required [(ngModel)]="post.producto"> Escribe aqui tu producto</ion-label>
+  <ion-item class="centered-input">
+    <ion-label position="floating">Producto</ion-label>
+    <ion-input type="text" required [(ngModel)]="post.producto" placeholder="Escribe aquí tu producto"></ion-input>
   </ion-item>
+  
 
-  <ion-item>
-    <ion-label position = "floating"> Sitio </ion-label>
-    <ion-label type="text" required [(ngModel)]="post.sitio"> Escribe aqui el sitio de compra</ion-label>
+  <ion-item class="centered-input">
+    <ion-label position="floating">Sitio</ion-label>
+    <ion-input type="text" required [(ngModel)]="post.sitio" placeholder="Escribe aquí el sitio de compra"></ion-input>
   </ion-item>
+  
 
   <ion-button class="ion-padding" color="secondary" expand="full" (click)="createPost(post)">Agregar</ion-button>
 

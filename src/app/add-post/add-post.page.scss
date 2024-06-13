@@ -1,0 +1,13 @@
+/* styles.scss o el archivo de estilos correspondiente */
+.centered-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .centered-input ion-item {
+    width: 80%; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto;
+  }
+  

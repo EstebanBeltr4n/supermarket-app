@@ -1,0 +1,28 @@
+/* styles.scss o el archivo de estilos correspondiente */
+.custom-width-container {
+    width: 300px; /* Ajusta este valor según tus necesidades */
+    /* Si quieres centrar el contenedor en la pantalla */
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 600px) {
+    .custom-width-container {
+      width: 90%; /* Ajuste para pantallas pequeñas */
+    }
+  }
+
+  /* styles.scss o el archivo de estilos correspondiente */
+.custom-button-width {
+    width: 200px; /* Ajusta este valor según tus necesidades */
+    /* Si quieres centrar el botón en el contenedor */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 600px) {
+    .custom-button-width {
+      width: 90%; /* Ajuste para pantallas pequeñas */
+    }
+  }
+  
+  
